@@ -1,0 +1,371 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(images/about_us.jpg);
+    /* background: white; */
+  
+}
+
+nav{
+    /* border: 1px solid green ; */
+    background-color: #FF4B2B;
+   
+    
+}
+lable.logo{
+    color: white;
+    line-height: 80px;
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+nav ul{
+    /* border: 5px solid red ; */
+    float: right ;
+   
+    height: 80px;
+    margin-right: 20px;
+    
+    
+}
+ul li {
+    margin: 0 20px;
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+}
+.menu_link{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px ;
+    border-radius: 3px;
+    font-weight: bold;
+
+
+    
+}
+a.active,.menu_link:hover{
+    background: rgba(240, 173, 149, 0.5);
+    transition:  .5s;
+}
+.menu_icon{
+    float: right;
+    margin: 0 30px;
+    font-size: 30px;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+/* #sign_in_up{
+    background: #1b9bff;
+    float: right;
+    position: relative;
+    top:20px;
+    right: 30px;
+    left: 300px;
+    padding: 10px 30px;
+    border: 1px solid white;
+   
+    
+} */
+#in_up{
+     display: inline-block;
+    text-decoration: none;
+   color: white;
+    
+}
+.content{
+    width: 100%;
+    height: 100vh;
+   
+}
+.feedback{
+    width: 100%;
+    height: 100%;
+   /* border: 4px solid black; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.5);
+}
+.form{
+    /* border: 2px solid red ; */
+    height: 90%;
+    width: 60%;
+    /* background: white; */
+    background:rgba(255,255,255,0.9);
+    /* padding: 20px 40px; */
+    padding: 10px 20px;
+    /* overflow: auto; */
+    /* border: 2px solid black; */
+    border-radius: 10px;
+  /* box-shadow: 5px 5px 5px 5px gray; */
+  box-shadow: 5px 5px 8px 1px gray;
+}
+
+.form h1{
+    text-align: center;
+    /* background: white;
+    display: inline-block; */
+}
+.form_material{
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    overflow: auto;
+}
+.inpt{
+    padding: 8px;
+    width: 300px;
+    margin-right: 80px;
+    margin-top: 15px;
+    border: 2px solid red;
+    font-size: 15px ;
+}
+#text_area{
+    width: 60%;
+   height: 100px;
+   border: 2px solid red ;
+   font-size: 15px ;
+}
+#submit{
+    padding: 7px 16px ;
+    background: #FF4B2B;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    /* font-family: sans-serif; */
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px 1px gray;
+}
+#submit:hover{
+    transition:0.5s;
+    transform: perspective(600px) translateY(3px );
+    /* transform: perspective(600px) translateX(3px ); */
+
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    width: 100%;
+    /* border: 2px solid red ; */
+    margin: 0;
+    background: rgba(255,255,255,0.5);
+}
+.icon{
+    /* border: 2px solid black; */
+    height: 40px;
+    width: 20px;
+}
+
+.popup .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .popup .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .popup .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .popup .overlay a:hover,
+  .popup .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .popup .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .popup iframe {
+      overflow: scroll;
+      width: 80vw;
+      height: 80vh;
+  }
+  @media screen and (max-width:1422px ){
+      .form{
+       
+        width: 80%;
+      }
+  }
+  @media screen and (max-width:520px ){
+    .form_material{
+       
+        margin-top: 30px;
+        overflow: auto;
+    }
+}
+  @media screen and (max-width:1090px ){
+    .form{
+     
+      width: 90%;
+    }
+}
+@media screen and (max-width:970px ){
+    .form{
+     
+      width: 99%;
+      margin: 0;
+    }
+    .feedback{
+        padding: 2px;
+    }
+}
+  @media screen and (max-height: 450px) {
+    .popup .overlay a {
+      font-size: 20px;
+    }
+    .popup .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+/* @media screen and (max-width:980px ){
+   lable.logo{
+       font-size: 30px;
+       margin-left: 50px;
+   }
+   nav ul li a{
+       font-size: 13px;
+   }
+}
+
+
+@media screen and (max-width:858px){
+    nav ul{
+        position: fixed;
+        height:100vh;
+        width: 100%;
+        background: #FF4B2B;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+
+
+    }
+    nav ul li{
+        
+        display: block;
+        border: 1px solid black ;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        background:none ;
+        color: #0082e6;
+    }
+    .menu_icon{
+        display: block;
+    }
+   
+  
+} */
+@media screen and (max-width:636px ){
+    .inpt{
+        padding: 8px;
+        width: 200px;
+        margin-right: 40px;
+        margin-top: 15px;
+    }
+ }
+
+@media screen and (max-width:1099px ){
+    lable.logo{
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    .menu_link{
+        font-size: 13px;
+    }
+  
+ }
+ @media screen and (min-width:943px){
+     nav ul{
+         /* border: 5px solid red ; */
+         float: right ;
+        
+         height: 80px;
+         margin-right: 20px;
+         
+         
+     }
+     ul li {
+        margin: 0 20px;
+        list-style: none;
+        display: inline-block;
+        line-height: 80px;
+    }
+ }
+
+
+ @media screen and (max-width:942px){
+     nav ul{
+         position: fixed;
+         height:100vh;
+         width: 100%;
+         background: #FF4B2B;
+         top: 80px;
+         left: -100%;
+         text-align: center;
+         transition: all 0.5s;
+ 
+ 
+     }
+     nav ul li{
+         
+         display: block;
+         /* border: 1px solid black ; */
+         
+     }
+     .menu_link{
+         font-size: 20px;
+     }
+     a.active,.menu_link:hover{
+         background:none ;
+         color: #0082e6;
+     }
+     .menu_icon{
+         display: block;
+     }
+    
+   
+ }

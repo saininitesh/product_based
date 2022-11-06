@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style_service.css">
+    
+    <script src="https://kit.fontawesome.com/1990b486d3.js" crossorigin="anonymous"></script>
+    <script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		};
+	</script>
+</head>
+<body>
+    <div class="popup">
+		<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+		<iframe src="login.html" frameborder="0" scrolling="no"></iframe>
+		</div>
+		</div>
+	</div>
+    <nav id="menu-bar">
+        <lable class="logo">LOGO</lable>
+        <a  href="#" onclick="openNav()"><svg style="margin-right: 8px;" class="icon icon-user"><use xlink:href="#icon-user"></use></svg><i class="fas fa-user-plus"></i>Login</a>
+        <lable class="menu_icon" id="menu_icon"><i class="fas fa-bars " ></i></lable>
+        <ul id="ul">
+           
+            <li><a  class="menu_link" href="project11.html">HOME</a></li>
+            <li><a class="menu_link" href="service.html" target="myframe">PRODUCTS</a></li>
+            <li><a class="menu_link" href="About.html" target="myframe">ABOUT US</a></li>
+            <li><a class="menu_link active" href="contact.html" target="myframe">CONTACT</a></li>
+            <li><a class="menu_link" href="feedback.html" target="myframe">FEEDBACK</a></li>
+        </ul>
+    </nav>
+   
+   
+        <div id="div">
+            <div class="containerr">
+                <div class="contact-box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                        <form id="form">
+                            <input type="text" class="field" autofocus placeholder="Your Name">
+                        <input type="text" class="field" placeholder="Your Email">
+                        <input type="number" class="field" placeholder="Phone">
+                        <textarea placeholder="Message" class="field"></textarea>
+                        <!-- <button class="btn">Send</button> -->
+                        <input  id="submit" type="submit" name="submit_form" class="btn">
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <div id="div2">
+
+               
+    
+                <div id="footer">
+
+                    <!-- <iframe  id="iframe" src="footer.html" height="366px" width="100%" style="margin:0"></iframe> -->
+                    <footer id="footer_box" class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="footer-col">
+                                    <h4>company</h4>
+                                    <ul>
+                                        <li><a href="#">about us</a></li><br>
+                                        <li><a href="#">our services</a></li>
+                                        <li><a href="#">privacy policy</a></li>
+                                        <li><a href="#">affiliate program</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <h4>get help</h4>
+                                    <ul>
+                                        <li><a href="#">FAQ</a></li><br>
+                                        <li><a href="#">shipping</a></li><br>
+                                        
+                                        <li><a href="#">payment options</a></li><br>
+                                        <li><a href="#">Order</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <h4>online shop</h4>
+                                    <ul>
+                                        <li><a href="#">watch</a></li><br>
+                                        <li><a href="#">bag</a></li><br>
+                                        <li><a href="#">shoes</a></li><br>
+                                        <li><a href="#">dress</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <h4>follow us</h4>
+                                    <div class="social-links">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </footer>
+                </div>
+                </div>
+    <script src="contact.js"></script>
+</body>
+</html>

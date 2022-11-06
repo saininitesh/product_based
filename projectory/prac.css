@@ -1,0 +1,7 @@
+div{
+    width: 350px;
+    height: 200px;
+    background: chartreuse;
+    border: 2px solid red ;
+    float: left;
+}

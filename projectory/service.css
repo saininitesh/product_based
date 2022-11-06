@@ -1,0 +1,448 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(images/about_us.jpg);
+    /* background: rgb(255,255,255); */
+}
+
+nav{
+    /* border: 1px solid green ; */
+    background-color: #FF4B2B;
+   z-index: 5;
+    
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+lable.logo{
+    color: white;
+    line-height: 80px;
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: bold;
+}
+nav ul{
+    /* border: 5px solid red ; */
+    float: right ;
+   
+    height: 80px;
+    margin-right: 20px;
+z-index: 2;
+    
+}
+ul li {
+    margin: 0 20px;
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+    /* border: 2px solid red ; */
+}
+#footer{
+    
+    /* width: 100%;
+    position: absolute;
+    margin-top: 30px;
+    bottom: 0 ;
+  
+    padding: 0px; */
+   
+    /* border: 2px solid green; */
+    margin-top: 60px;
+    height: auto;
+    width: 100%;
+    display: relative;
+    
+}
+.icon{
+    /* border: 2px solid black; */
+    height: 40px;
+    width: 20px;
+}
+.menu_link{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px ;
+    border-radius: 3px;
+    font-weight: bold;
+
+
+    
+}
+a.active,.menu_link:hover{
+    background: rgba(240, 173, 149, 0.5);
+    transition:  .5s;
+}
+.menu_icon{
+    float: right;
+    margin: 0 30px;
+    font-size: 30px;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+/* #sign_in_up{
+    background: #1b9bff;
+    float: right;
+    position: relative;
+    top:20px;
+    right: 30px;
+    left: 300px;
+    padding: 10px 30px;
+    border: 1px solid white;
+   
+    
+} */
+#in_up{
+     display: inline-block;
+    text-decoration: none;
+   color: white;
+    
+}
+.content{
+    width: 100%;
+    height: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid green; */
+   
+}
+/* body{
+    background-image: url(images/about_us.jpg);
+
+} */
+#cont{
+    width: 85%;
+    height: 80%;
+    /* border: 2px solid red ; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(236, 231, 229, 0.682);
+   border-radius: 16px;
+   
+}
+/* .content{
+    border: 5px solid green;
+} */
+.child{
+    /* border: 2px solid red ; */
+    /* flex-basis: 30%; */
+    margin-top: 100px;
+    
+    width: 30%;
+    height: 650px;
+    /* background: rgba(236, 231, 229, 0.7); */
+    background: red;
+    font-size: 18px;
+    padding: 20px ;
+    /* overflow: auto; */
+   border-radius: 10px ;
+   text-align: justify;
+   z-index: 0;
+    
+}
+.child h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px ;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+   
+}
+/* @media screen and (max-width:980px ){
+   lable.logo{
+       font-size: 30px;
+       margin-left: 50px;
+   }
+   nav ul li a{
+       font-size: 13px;
+   }
+}
+
+
+@media screen and (max-width:858px){
+    nav ul{
+        position: fixed;
+        height:100vh;
+        width: 100%;
+        background: #FF4B2B;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+
+
+    }
+    nav ul li{
+        
+        display: block;
+        border: 1px solid black ;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    a.active,a:hover{
+        background:none ;
+        color: #0082e6;
+    }
+    .menu_icon{
+        display: block;
+    }
+   
+  
+} */
+/* #slide{
+  
+    position: relative;
+    left: 250px;
+    height: 200px;
+    width: 100px;
+    top: -200px;
+} */
+
+.popup .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .popup .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .popup .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .popup .overlay a:hover,
+  .popup .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .popup .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .popup iframe {
+      overflow: scroll;
+      width: 80vw;
+      height: 80vh;
+  }
+  
+@media screen and (max-width:1338px){
+
+    #cont{
+        width: 96%;
+        height: 550px;
+        /* border: 2px solid red ; */
+        display: flex;
+        /* flex-basis: 30%; */
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(236, 231, 229, 0.582);
+       
+        /* position: relative;
+        top: -150px; */
+    }
+}
+  
+@media screen and (max-width:1251px){
+    #cont{
+        width: 96%;
+        height: 85%;
+        /* border: 2px solid red ; */
+        display: flex;
+        /* flex-basis: 30%; */
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(236, 231, 229, 0.582);
+        flex-wrap: wrap;
+
+        /* position: relative;
+        top: -150px; */
+    }
+    .content{
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 3px solid green; */
+       
+    }
+    .child{
+        margin-bottom: 20px;
+        width: 40%;
+    }
+}
+@media screen and (max-width:998px){
+    #cont{
+        width: 96%;
+        height: 85%;
+        /* border: 2px solid red ; */
+        display: flex;
+        /* flex-basis: 30%; */
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(236, 231, 229, 0.582);
+        flex-wrap: wrap;
+
+        /* position: relative;
+        top: -150px; */
+    }
+    .content{
+        width: 100%;
+        height: 1700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 3px solid green; */
+       
+    }
+    .child{
+        margin-bottom: 20px;
+        width: 60%;
+        margin: 20px;
+    }
+}
+@media screen and (max-width:779px){
+    #cont{
+        width: 96%;
+        height: 85%;
+        /* border: 2px solid red ; */
+        display: flex;
+        /* flex-basis: 30%; */
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(236, 231, 229, 0.582);
+        flex-wrap: wrap;
+
+        /* position: relative;
+        top: -150px; */
+    }
+    .content{
+        width: 100%;
+        height: 1700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 3px solid green; */
+       
+    }
+    .child{
+        margin-bottom: 20px;
+        width: 80%;
+        margin: 20px;
+    }
+}
+  @media screen and (max-height: 450px) {
+    .popup .overlay a {
+      font-size: 20px;
+    }
+    .popup .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+@media screen and (max-width:1099px ){
+    lable.logo{
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    .menu_link{
+        font-size: 13px;
+    }
+    /* #slide{
+        
+        position: relative;
+        left: 200px;
+        height: 100px;
+        width: 100px;
+        top: -200px;
+    } */
+ }
+ @media screen and (min-width:943px){
+     nav ul{
+         /* border: 5px solid red ; */
+         float: right ;
+        
+         height: 80px;
+         margin-right: 20px;
+         
+         
+     }
+     ul li {
+        margin: 0 20px;
+        list-style: none;
+        display: inline-block;
+        line-height: 80px;
+    }
+ }
+ 
+ @media screen and (max-width:942px){
+     nav ul{
+         position: fixed;
+         height:100vh;
+         width: 100%;
+         background: #FF4B2B;
+         top: 80px;
+         left: -100%;
+         text-align: center;
+         transition: all 0.5s;
+ 
+ 
+     }
+     nav ul li{
+         
+         display: block;
+         /* border: 1px solid black ; */
+         
+     }
+     .menu_link{
+         font-size: 20px;
+     }
+     a.active,.menu_link:hover{
+         background:none ;
+         color: #0082e6;
+     }
+     .menu_icon{
+         display: block;
+     }
+    
+   
+ }
+ .img{
+    Max-width:100%;
+ }
